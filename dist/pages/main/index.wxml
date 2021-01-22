@@ -1,0 +1,10 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index">
+        <view>
+            <image src="{{user[0].avatarUrl}}"></image>
+        </view>
+        <view><text> {{'Hi  ' + user[0].nickName}}</text>
+        </view>
+        <button class="btn" bindtap="handleUpdateUserInfo">修改地址</button>
+    </view>
+</block>

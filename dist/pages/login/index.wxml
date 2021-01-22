@@ -1,0 +1,5 @@
+<block wx:if="{{$taroCompReady}}">
+    <view class="index"><text>index</text>
+        <button class="btn" open-type="getUserInfo" bindgetuserinfo="tobegin" type="primary" lang="zh_CN">一键登录</button>
+    </view>
+</block>

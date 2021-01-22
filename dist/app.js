@@ -76,7 +76,6 @@ var _App = function (_BaseComponent) {
       _taroWeapp2.default.checkSession({
         success: function success() {},
         fail: function fail() {
-          console.log();
           // session_key 已经失效，需要重新执行登录流程
           _taroWeapp2.default.redirectTo({
             url: '/pages/login/index'
@@ -158,4 +157,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ })
 
-},[["./src/app.jsx","runtime","taro","vendors"]]]);;;;;;;;;;
+},[["./src/app.jsx","runtime","taro","vendors"]]]);;

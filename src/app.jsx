@@ -21,7 +21,6 @@ class App extends Component {
       success: function () {
       },
       fail: function () {
-        console.log()
         // session_key 已经失效，需要重新执行登录流程
         Taro.redirectTo({
           url: '/pages/login/index'

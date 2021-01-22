@@ -1,7 +1,7 @@
 {
 	"projectname": "wxAuthLogin",
 	"description": "微信授权登录",
-	"appid": "touristappid",
+	"appid": "wx25118c855c7bf832",
 	"setting": {
 		"urlCheck": false,
 		"es6": false,

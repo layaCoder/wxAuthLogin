@@ -28,6 +28,7 @@ export default class Index extends Component {
     Taro.login()
       .then(loginInfo => {
         jsCode = loginInfo.code
+        console.log('login info..>>', jsCode)
         return Taro.getUserInfo()
       })
       .then(userInfo => {
@@ -57,6 +58,9 @@ export default class Index extends Component {
             Taro.redirectTo({
               url: '/pages/main/index'
             })
+          },
+          fail: function (err) {
+            console.log(err, 63)
           }
         })
       })

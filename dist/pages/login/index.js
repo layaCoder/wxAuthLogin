@@ -52,6 +52,7 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
       var jsCode = void 0;
       _taroWeapp2.default.login().then(function (loginInfo) {
         jsCode = loginInfo.code;
+        console.log('login info..>>', jsCode);
         return _taroWeapp2.default.getUserInfo();
       }).then(function (userInfo) {
         var _userInfo$userInfo = userInfo.userInfo,
@@ -88,6 +89,9 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
             _taroWeapp2.default.redirectTo({
               url: '/pages/main/index'
             });
+          },
+          fail: function fail(err) {
+            console.log(err, 63);
           }
         });
       });
